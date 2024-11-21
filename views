@@ -1,0 +1,26 @@
+Usage:
+  bin/rails generate devise NAME [options]
+
+Options:
+      [--skip-namespace]                                            # Skip namespace (affects only isolated engines)
+                                                                    # Default: false
+      [--skip-collision-check]                                      # Skip collision check
+                                                                    # Default: false
+      [--force-plural], [--no-force-plural], [--skip-force-plural]  # Do not singularize the model name, even if it appears plural
+                                                                    # Default: false
+      [--model-name=MODEL_NAME]                                     # ModelName to be used
+  -o, --orm=NAME                                                    # Orm to be invoked
+                                                                    # Default: active_record
+      [--routes], [--no-routes], [--skip-routes]                    # Generate routes
+                                                                    # Default: true
+
+ActiveRecord options:
+  [--primary-key-type=PRIMARY_KEY_TYPE]  # The type for primary key
+
+Runtime options:
+  -f, [--force]                                      # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend], [--skip-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet], [--skip-quiet]        # Suppress status output
+  -s, [--skip], [--no-skip], [--skip-skip]           # Skip files that already exist
+
+Generates a model with the given NAME (if one does not exist) with devise configuration plus a migration file and devise routes.
